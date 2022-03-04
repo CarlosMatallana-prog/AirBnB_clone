@@ -23,9 +23,15 @@
 #unignore .txt files in each directory
 !*/*.txt
 
+#ignore test files
+test_*.py
+*.json
+
 #unignore tests directories
-!*/tests
+!tests/
 !tests/test_models/
+!tests/test_models/*.py
+!models/engine/
 !*/tests/*.txt
 
 #unignore .gitignore
@@ -35,9 +41,6 @@
 *-main.c
 *-main.py
 
-#ignore test files
-test_*.py
-*.json
 
 #ignore backup files
 *.*~
