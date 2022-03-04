@@ -21,8 +21,11 @@
 !*/*.sh
 
 #unignore .txt files in each directory
-#!*/*.txt
+!*/*.txt
+
+#unignore tests directories
 !*/tests
+!tests/test_models/
 !*/tests/*.txt
 
 #unignore .gitignore
@@ -31,6 +34,9 @@
 #ignore compiled files
 *-main.c
 *-main.py
+
+#ignore test files
+test_*.py
 
 #ignore backup files
 *.*~
