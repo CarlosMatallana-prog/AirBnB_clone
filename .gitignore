@@ -1,0 +1,40 @@
+#ignore all files in each directory
+*/*
+
+#unignore .c .py files in each directory
+!*/*.c
+!*/*.py
+
+#unignore .h header files in each directory
+!*/*.h
+
+#unignore .o files in each directory
+!*/*.o
+
+#unignore .a files in each directory
+!*/*.a
+
+#unignore .md files in each directory
+!*/*.md
+
+#unignore .sh files in each directory
+!*/*.sh
+
+#unignore .txt files in each directory
+#!*/*.txt
+!*/tests
+!*/tests/*.txt
+
+#unignore .gitignore
+!.gitignore
+
+#ignore compiled files
+*-main.c
+*-main.py
+
+#ignore backup files
+*.*~
+
+#ignore clion files
+.idea
+CMakeLists.txt
