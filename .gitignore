@@ -37,6 +37,7 @@
 
 #ignore test files
 test_*.py
+*.json
 
 #ignore backup files
 *.*~
