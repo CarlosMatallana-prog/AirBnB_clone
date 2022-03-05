@@ -5,11 +5,18 @@ Usage:
     "python3 -m unittest discover tests" command or
     "python3 -m unittest tests/test_models/test_engine/test_file_storage.py"
 """
+from models.amenity import Amenity
+from models.city import City
 from models.engine.file_storage import FileStorage
 from models.base_model import BaseModel
 from models import storage
 import unittest
 import os
+
+from models.place import Place
+from models.review import Review
+from models.state import State
+from models.user import User
 
 my_dict = {'id': '56d43177-cc5f-4d6c-a0c1-e167f8c27337',
            'created_at': '2017-09-28T21:03:54.052298',
@@ -43,8 +50,10 @@ class TestFileStorage(unittest.TestCase):
             text = f.read()
         self.assertIn(key, text)
 
+
 class TestFileStorage00(unittest.TestCase):
     """Tests instantiation of FileStorage."""
+
     def test_01(self):
         """Checks correct with no arguments."""
         fs0 = FileStorage()
@@ -72,6 +81,7 @@ class TestFileStorage00(unittest.TestCase):
 
 class TestFileStorage01(unittest.TestCase):
     """Check correct implementation of all() method."""
+
     def test_01(self):
         """Checks for correct type of dict."""
         dictionary = storage.all()
@@ -222,7 +232,7 @@ class TestFileStorage02(unittest.TestCase):
         cwd = os.getcwd()
         filename = "file.json"
         mymodel = BaseModel()
-        my_obj = mymodel.__class__.__name__ + '.'+mymodel.id
+        my_obj = mymodel.__class__.__name__ + '.' + mymodel.id
         storage.save()
         self.assertTrue(os.path.exists(filename))
         storage._FileStorage__objects = {}
