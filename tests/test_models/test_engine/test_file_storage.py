@@ -1,10 +1,5 @@
 #!/usr/bin/python3
-"""This module tests file_storage.py file.
-Usage:
-    To be used with the unittest module, can be use it with
-    "python3 -m unittest discover tests" command or
-    "python3 -m unittest tests/test_models/test_engine/test_file_storage.py"
-"""
+""" This module tests file_storage.py file. """
 from models.amenity import Amenity
 from models.city import City
 from models.engine.file_storage import FileStorage
@@ -12,7 +7,6 @@ from models.base_model import BaseModel
 from models import storage
 import unittest
 import os
-
 from models.place import Place
 from models.review import Review
 from models.state import State
