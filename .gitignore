@@ -5,6 +5,10 @@
 !*/*.c
 !*/*.py
 
+#unignore .html .css files in each directory
+!*/*.html
+!*/*.css
+
 #unignore .h header files in each directory
 !*/*.h
 
