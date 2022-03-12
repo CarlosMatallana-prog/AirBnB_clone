@@ -1,0 +1,107 @@
+.places {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #FFFFFF;
+}
+
+.places h1 {
+    width: 100%;
+    align-self: flex-start;
+    font-size: 30px;
+    margin: 3% 0 0 1%;
+    font-weight: 700;
+}
+
+.places article {
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border: solid 1px #FF5A5F;
+    font-size: 30px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.places article h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    min-height: 67px;
+}
+
+.price_by_night {
+    position: absolute;
+    display: flex;
+    color: #FF5A5F;
+    border: solid 4px #FF5A5F;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 35px;
+    justify-content: center;
+    align-items: center;
+    top: 0.75em;
+    right: 1.5em;
+}
+
+.price_by_night p {
+    font-size: 30px;
+    margin: 0 0.1em 0em 0.1em;
+}
+
+.information {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    border-top: solid 1px #DDDDDD;
+    border-bottom: solid 1px #DDDDDD;
+    justify-content: center;
+}
+
+.information p {
+    padding-top: 40%;
+}
+
+.max_guest {
+    background-image: url('/AirBnB_clone/web_static/images/icon_group.png');
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    width: 100px;
+}
+
+.number_rooms {
+    background-image: url('/AirBnB_clone/web_static/images/icon_bed.png');
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    width: 100px;
+}
+
+.number_bathrooms {
+    background-image: url('/AirBnB_clone/web_static/images/icon_bath.png');
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    width: 100px;
+}
+
+.user {
+    margin: 0 0 1em;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    height: 1em;
+}
+
+.user span {
+    font-weight: bold;
+}
+
+.user p {
+    margin: 0;
+    padding: 2% 0;
+}
+
+.description p {
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+}
