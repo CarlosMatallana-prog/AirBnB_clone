@@ -31,6 +31,10 @@
 test_*.py
 *.json
 
+#unignore files directories
+!web_static/images
+!web_static/styles
+
 #unignore tests directories
 !tests/
 !tests/test_models/
